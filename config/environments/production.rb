@@ -12,7 +12,7 @@ Rails.application.configure do
 
 #Ins Start katta
 config.action_mailer.delivery_method = :smtp
-config.action_mailer.default_url_options = { :host => 'maurya-photo-app.herokuapp.com', protocol => 'https'}
+config.action_mailer.default_url_options = { :host => 'https://maurya-photo-app.herokuapp.com'}
 #Ins end katta
 
   # Full error reports are disabled and caching is turned on.
