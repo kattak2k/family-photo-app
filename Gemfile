@@ -4,6 +4,13 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
+# Ins start Katta
+# for authentication -> Ins Katta
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
+# Ins End Katta
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,8 +39,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+#Ins Start Katta  
   # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+  gem 'sqlite3'
+#Ins End Katta
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
@@ -48,9 +58,11 @@ group :development do
   gem 'spring'
 end
 
+#Ins Start Katta  
 group :production do
   # Use sqlite3 as the database for Active Record
 gem 'pg'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'rails_12factor'
 end
+#Ins End Katta  
